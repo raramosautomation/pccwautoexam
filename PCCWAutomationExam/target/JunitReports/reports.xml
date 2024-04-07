@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="30.763" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="feature to test login" name="Validate Positive LogIn test" time="11.076">
+<system-out><![CDATA[
+Given browser is open and launch the url provided...........................passed
+When user log-in his credentials, username and password.....................passed
+And user click submit button................................................passed
+Then user is redirected to new page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login" name="Validate Negative username test" time="8.654">
+<system-out><![CDATA[
+Given browser is open and launch the url provided...........................passed
+When user log-in his credentials, incorrect username and correct password...passed
+And user click submit button................................................passed
+Then the system displays username error message.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test login" name="Validate Negative password test" time="10.703">
+<system-out><![CDATA[
+Given browser is open and launch the url provided...........................passed
+When user log-in his credentials, username and incorrect password...........passed
+And user click submit button................................................passed
+Then the system displays password error message.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
